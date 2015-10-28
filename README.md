@@ -27,7 +27,7 @@ d.show();
 For message confirm
 ```java
 Dialog d = Dialog.newInstance();
-d.confirm(null, null, "Message error");
+d.confirm(null, null, "Message confirm");
 d.confirm(
   okEvent -> {
     //{other code for btn ok}
