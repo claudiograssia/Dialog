@@ -24,21 +24,21 @@ public class Message implements Initializable {
     @FXML
     protected Label lbl;
 
+    @FXML
+    protected ImageView iconImage;
+
+    @FXML
+    protected HBox hbox;
+
     protected Button btnYES = new Button("SI");
 
     protected Button btnNO = new Button("NO");
 
     protected Button btnCancel = new Button("Cancel");
 
-    @FXML
-    protected ImageView iconImage;
-
     protected Stage currentStage;
 
     protected Map<TYPES, String> icons = new HashMap<>();
-
-    @FXML
-    protected HBox hbox;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
