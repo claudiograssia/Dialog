@@ -1,4 +1,4 @@
-# Dialog
+# JavaFx Dialog For Java 8
 
 This is a JAVAFX Dialog for java 8
 
