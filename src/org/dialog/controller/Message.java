@@ -17,17 +17,14 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.ResourceBundle;
 
-/**
- * Created by root on 23/10/15.
- */
 public class Message implements Initializable {
 
-    public enum TYPES{INFO, ERROR, WARNING, CONFIRM};
+    public enum TYPES{INFO, ERROR, WARNING, CONFIRM}
 
     @FXML
     protected Label lbl;
 
-    protected Button btnYES = new Button("SI");;
+    protected Button btnYES = new Button("SI");
 
     protected Button btnNO = new Button("NO");
 
@@ -77,9 +74,8 @@ public class Message implements Initializable {
             if(event!=null)
                 event.handle(e);
 
-            if(closeBox) {
+            if(closeBox)
                 currentStage.close();
-            }
         });
         btnYES.setText(lblText);
         hbox.getChildren().add(btnYES);
@@ -95,9 +91,9 @@ public class Message implements Initializable {
         btnNO.setOnAction(e -> {
             if(event!=null)
                 event.handle(e);
-            if(closeBox) {
+
+            if(closeBox)
                 currentStage.close();
-            }
         });
         hbox.getChildren().add(btnNO);
     }
@@ -111,6 +107,7 @@ public class Message implements Initializable {
         btnCancel.setOnAction(e -> {
             if(event!=null)
                 event.handle(e);
+
             currentStage.close();
         });
         hbox.getChildren().add(btnCancel);
