@@ -42,10 +42,6 @@ public class Message implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        btnYES.setVisible(false);
-        btnNO.setVisible(false);
-        btnCancel.setVisible(false);
-
         icons.put(TYPES.INFO, "assets/info.jpg");
         icons.put(TYPES.ERROR, "assets/error.jpg");
         icons.put(TYPES.WARNING, "assets/warning.jpg");
